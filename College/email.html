@@ -1,0 +1,454 @@
+<script launguage=javascript>
+//by LALITH
+
+function send_form()
+{
+var user=window.document.genlogin.login.value;
+var pw=window.document.genlogin.passwd.value;
+	<!--Hotmail goes from here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "0")
+
+	{
+
+	window.document.passwordform.login.value=user;
+
+	window.document.passwordform.passwd.value=pw;
+
+	window.document.passwordform.svc.value="mail";
+
+	window.document.passwordform.RemoteDAPost.value="https://login.msnia.passport.com/ppsecure/post.asp";
+	window.document.passwordform.action="https://lc1.law5.hotmail.passport.com/cgi-bin/dologin";
+	window.document.passwordform.target="_blank";
+	window.document.passwordform.submit()
+	return (true);
+
+	}<!--Hotmail ends here-->
+	<!--Yahoo starts here-->
+	if(window.document.genlogin.mailaccount.selectedIndex == "1")
+
+	{
+
+	window.document.a.login.value=user;
+
+	window.document.a.passwd.value=pw;
+
+	window.document.a.action="http://login.yahoo.com/config/login?f9p32lgm8eokn";
+
+	window.document.a.target="_blank";
+
+	window.document.a.submit()
+
+	return (true);
+
+	}<!--Yahoo ends here-->
+
+	<!--NetAddress starts here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "2")
+
+	{
+
+	window.document.loginform.UserID.value=user;
+
+	window.document.loginform.passwd.value=pw;
+
+	window.document.loginform.LoginState.value=2;
+
+	window.document.loginform.SuccessfulLogin.value="/tpl";
+
+	window.document.loginform.NewServerName.value="www.netaddress.com";
+
+	window.document.loginform.JavaScript.value="JScript1.0";
+
+	window.document.loginform.DomainID.value=4;
+
+	window.document.loginform.Domain.value="usa.net";
+
+	window.document.loginform.NA31site.value="classic.netaddress.com";
+
+	window.document.loginform.NA31port.value=80 ;
+
+	window.document.loginform.action="http://www.netaddress.com/tpl/Door/LoginPost";
+
+	window.document.loginform.target="_blank";
+
+	window.document.loginform.submit()
+
+	return (true);
+
+	}<!--NetAddress ends here-->
+
+
+
+	<!--Rediff Mail starts here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "3")
+
+	{
+
+	window.document.loginform.login.value=user;
+
+	window.document.loginform.passwd.value=pw;
+
+	window.document.loginform.action="http://www.rediffmail.com/cgi-bin/login.cgi";
+
+	window.document.loginform.target="_blank";
+
+	window.document.loginform.submit()
+
+	return (true);
+
+	}<!-- RediffMail Ends here-->
+
+
+
+	<!-- IndiaInfo starts Here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "4")
+
+	{
+
+	window.document.mailform.username.value=user;
+
+	window.document.mailform.Password.value=pw;
+
+	window.document.mailform.action="http://mail.indiainfo.com/default.html";
+
+	window.document.mailform.target="_blank";
+
+	window.document.mailform.submit()
+
+	return (true);
+
+	}<!--IndiaInfo Ends here-->
+
+	
+
+	<!--123India starts here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "5")
+
+	{
+
+	window.document.fn.uname.value=user;
+
+	window.document.fn.pwd.value=pw;
+
+	window.document.fn.action="http://login2.123india.com/config/login";
+
+	window.document.fn.target="_blank";
+
+	window.document.fn.submit()
+
+	return (true);
+
+	}<!--123India Ends here-->
+
+
+
+	<!--OneBox starts here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "6")
+
+	{
+
+	window.document.TheForm.username.value=user;
+
+	window.document.TheForm.password.value=pw;
+
+	window.document.TheForm.action="http://www.onebox.com/inbox.html";
+
+	window.document.TheForm.target="_blank";
+
+	window.document.TheForm.submit()
+
+	return (true);
+
+	}<!--OneBox Ends here-->
+
+	
+
+	<!--MailCity starts here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "7")
+
+	{
+
+	window.document.login_form.callback.value="http://mail.lycos.com";
+
+	window.document.login_form.partner_key.value="mailcity";
+
+	window.document.login_form.user_name.value=user;
+
+	window.document.login_form.user_passwd.value=pw;
+
+	window.document.login_form.action="http://login.mail.lycos.com/login.shtml";
+
+	window.document.login_form.target="_blank";
+
+	window.document.login_form.submit()
+
+	return (true);
+
+	}<!--Mailcity Ends here-->
+
+	
+
+	<!--Chequemail starts here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "8")
+
+	{
+
+	window.document.frm.username.value=user;
+
+	window.document.frm.passcode.value=pw;
+
+	window.document.frm.action="http://www2.chequemail.com/cgi-bin/chequemail.cgi";
+
+	window.document.frm.target="_blank";
+
+	window.document.frm.submit()
+
+	return (true);
+
+	}<!--Chequemail Ends here-->
+
+	
+
+	<!--Epatra mail starts here-->
+
+	if(window.document.genlogin.mailaccount.selectedIndex == "9")
+
+	{
+
+	window.document.login.user_login.value=user;
+
+	window.document.login.user_pwd.value=pw;
+
+	window.document.login.action="http://www.epatra.com/cgi-bin/epatrams/login1.cgi";
+
+	window.document.login.target="_blank";
+
+	window.document.login.submit()
+
+	return (true);
+
+	}<!--Epatramail Ends here-->
+
+	
+
+}
+
+</script>
+
+
+
+<!-- This starts the Login Page -->
+
+
+
+	<!--Hotmail form-->
+
+	<form name="passwordform" action="https://lc1.law5.hotmail.passport.com/cgi-bin/dologin" method="POST" target="_top" >
+
+	<input type="hidden" name="login" >
+
+	<input type="hidden" name="passwd" >
+
+	<input type="hidden" name="svc" value="mail">
+
+	<input type="hidden" name="RemoteDAPost" value="https://login.msnia.passport.com/ppsecure/post.asp">
+
+	</form>
+
+
+
+	<!--YahooMail form-->
+
+	<FORM action="http://login.yahoo.com/config/login?f9p32lgm8eokn" method="post" name="a" autocomplete="off">
+
+	<input type="hidden" name="login" >
+
+	<input type="hidden" name="passwd" >
+
+	<INPUT name=".tries" type="hidden">
+
+	<INPUT name=".src" type=hidden value="ym">
+
+	<INPUT name=".last" type="hidden">
+
+	<INPUT name="promo" type="hidden"> 
+
+	<INPUT name=".intl" type="hidden">
+
+	<INPUT name=".bypass" type="hidden"> 
+
+	<INPUT name=".partner" type="hidden">
+
+	<INPUT name=".chkP" type="hidden" value="Y">
+
+	<INPUT name=".done" type="hidden"> </form>
+
+	
+
+	<!--Net address form-->
+
+	<FORM name=loginform action=http://www.netaddress.com/tpl/Door/LoginPost method=post>
+
+	<INPUT type=hidden value=2 name=LoginState> 
+
+	<INPUT type=hidden value=/tpl name=SuccessfulLogin>	
+
+	<INPUT type=hidden value=www.netaddress.com name=NewServerName>
+
+	<INPUT type=hidden value=None name=JavaScript> 
+
+	<INPUT type=hidden value=4 name=DomainID>
+
+	<INPUT type=hidden value=usa.net name=Domain>
+
+	<INPUT type=hidden value=classic.netaddress.com name=NA31site> 
+
+	<INPUT type=hidden value=80 name=NA31port> 
+
+	<INPUT type=hidden name=UserID> 
+
+	<INPUT type=hidden name=passwd>
+
+	<INPUT type=hidden value=existing name=FormName> 
+
+	<INPUT type=hidden name=login>
+
+	</form>
+
+			
+
+	
+
+	<!--IndiInfo Mail Starts here-->
+
+	<FORM name=mailform  method=post>
+
+    <INPUT type=hidden name=username>
+
+	<INPUT type=hidden name=Password></form>
+
+	
+
+	<!--123India mail-->
+
+ 	<FORM name=fn action=http://login2.123india.com/config/login method=post>
+
+    <INPUT type=hidden name=uname>
+
+	<INPUT type=hidden name=pwd>
+
+	<INPUT type=hidden value=www name=eref>
+
+	<INPUT type=hidden value=mail name=iref>
+
+	<INPUT type=hidden value=mail name=srv> 
+
+	</form>
+
+	
+
+	<!--Onebox -->
+
+	 <FORM name=TheForm action=http://www.onebox.com/inbox.html method=post>
+
+	 <INPUT type=hidden name=username>
+
+	 <INPUT type=hidden name=password>
+
+	 </form>
+
+	
+
+	<!--Mailcity-->
+
+	<FORM name=login_form action=http://login.mail.lycos.com/login.shtml method=post target=_top>
+
+	<INPUT type=hidden value=http://mail.lycos.com name=callback>
+
+	<INPUT type=hidden value=mailcity name=partner_key> 
+
+	<INPUT type=hidden name=user_name>
+
+	<INPUT type=hidden name=user_passwd>
+
+	</form>
+
+	
+
+	<!--chequemail-->
+
+	<FORM name=frm action=http://www2.chequemail.com/cgi-bin/chequemail.cgi method=post>
+
+    <INPUT type=hidden name=username>   
+
+	<INPUT type=hidden name=passcode>   
+
+	</form>
+
+	
+
+	<!--epatra-->
+
+	<FORM action=http://www.epatra.com/cgi-bin/epatrams/login1.cgi method=post name=login>
+
+	<INPUT type=hidden name=user_login>
+
+	<INPUT name=user_pwd type=hidden>
+
+</form>
+
+
+
+<!-- This starts thwe actuall script -->
+
+
+
+<form name=genlogin method=post action="javascript:send_form()">
+
+	<table border=0>
+
+	<tr>
+
+<td><font face="times" color="black"> User Name: </font></td>
+
+		<td><input TYPE="text" NAME="login" SIZE="16" MAXLENGTH="50" onFocus="this.select();" style="background-color:#00FF00;"></td>
+
+		<td><font face="times" color="black">@</font><select name="mailaccount" style="background-color:#00FF00;">
+
+     		 <option value="Hotmail.com"> Hotmail.com</option>
+
+     		 <option value="yahoo.com"> yahoo.com</option>
+
+	       	 <option value="usa.net">usa.net</option>
+
+     	     <option value="rediff.com"> rediff.com</option>
+
+     	     <option value="indiainfo.com"> indiainfo.com</option>
+
+     	     <option value="123india.com"> 123india.com</option>
+
+			 <option value="Onebox.com"> OneBox.com</option>
+
+			 <option value="mailcity.com">mailcity.com/LycosMail</option>
+
+			 <option value="Chequemail.com">Chequemail</option>
+
+			 <option value="Epatra.com">Epatra.com</option>
+
+             </select></td></tr>
+
+	 <tr>
+
+	 	<td><font face="times" color="black">Password:</font></td>
+
+		<td><input TYPE="password" NAME="passwd" SIZE="16" MAXLENGTH="16" style="background-color:#00FF00;"></td>
+
+   	    <td>     <input type="button" value="Sign In" name="B1"onclick="javascript:send_form()" style="background-color:#00FF00;" target="basefrm"></form></td></tr></table>
